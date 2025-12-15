@@ -169,9 +169,29 @@
           Please pay <strong>RM 40</strong> via <strong>Touch 'n Go QR</strong> to be include in grouping.
         </p>
 
-        <div style="text-align:center; margin:18px 0;">
-          <button class="btn btn-primary" disabled>Registration Open Soon</button>
+        <div class="form-container">
+             <h2>Register</h2>
+             <form action="/submit-registration" method="POST">
+
+        <div class="form-group">
+            <label for="Squad Name">Squad Name</label>
+            <input type="text" id="squadname" name="squadname" placeholder="e.g. DK Gaming" required>
         </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="asyikinmazyuliani@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="bio">Tell us about yourself</label>
+            <textarea id="bio" name="bio" rows="5" placeholder="Write a short bio here... (Hobbies, interests, experience)"></textarea>
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
 
         <div class="payment">
           <p>Scan QR to pay</p>
@@ -197,5 +217,6 @@
 
   <script src="script.js"></script>
 </body>
+
 
 </html>
