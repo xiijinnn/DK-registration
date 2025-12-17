@@ -173,20 +173,32 @@
              <h2>Register</h2>
              <form action="/submit-registration" method="POST">
 
+               <div class="grid" style="margin-top: 25px;">
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="Full Name" placeholder="Enter your real name" required>
+          </div>
+              
         <div class="form-group">
             <label for="Squad Name">Squad Name</label>
             <input type="text" id="squadname" name="squadname" placeholder="e.g. DK Gaming" required>
         </div>
 
         <div class="form-group">
+            <label for="userid">Game ID (Server)</label>
+            <input type="text" id="userid" name="Game ID/Server" placeholder="12345678 (1234)" required>
+        </div>
+                 
+        <div class="form-group">
             <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="asyikinmazyuliani@gmail.com" required>
         </div>
 
         <div class="form-group">
-            <label for="bio">Tell us about yourself</label>
-            <textarea id="bio" name="bio" rows="5" placeholder="Write a short bio here... (Hobbies, interests, experience)"></textarea>
-        </div>
+            <label for="contact">WhatsApp Number</label>
+            <input type="tel" id="contact" name="WhatsApp Number" placeholder="+60 12-345 6789" required>
+          </div>
+        </div>         
 
         <button type="submit">Register</button>
 
@@ -220,4 +232,5 @@
 
 
 </html>
+
 
